@@ -1,3 +1,13 @@
-<p>driving-list works!</p>
+<h1>SELFDRIVINGTHINGS</h1>
 
-{{listDriving | json}}
+<ul>
+    <li *ngFor='let driving of listDriving'>
+        {{driving.index}}
+        Tipo: {{driving.tipo}} <br>
+        Descrizione: {{driving.descrizione}} <br>
+        Tariffa: {{driving.tariffa}} <br>
+        valutazione media: {{driving.valutazionemedia}} <br>
+        <button (click)='rent(driving)'>rent</button>
+        <hr>
+    </li>
+</ul>

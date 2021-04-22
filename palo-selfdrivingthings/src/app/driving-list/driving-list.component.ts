@@ -14,4 +14,8 @@ export class DrivingListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  rent(driving): void {
+    console.log(driving);
+  }
+
 }
