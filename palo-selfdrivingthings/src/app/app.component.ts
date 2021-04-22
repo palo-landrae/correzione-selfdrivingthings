@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { Driving } from './driving.model';
+import { Driving } from './models/driving.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

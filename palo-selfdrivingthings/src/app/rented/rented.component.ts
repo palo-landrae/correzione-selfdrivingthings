@@ -1,5 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
-import { Driving } from '../driving.model';
+import { Driving } from '../models/driving.model';
 
 @Component({
   selector: 'app-rented',
