@@ -8,6 +8,7 @@ import { Driving } from '../driving.model';
 })
 export class DrivingListComponent implements OnInit {
   @Input() listDriving: Driving[];
+  @Input() rented : Driving;
 
   constructor() { }
 
@@ -15,7 +16,10 @@ export class DrivingListComponent implements OnInit {
   }
 
   rent(driving): void {
-    console.log(driving);
+    this.rented.tipo = driving.tipo;
+    this.rented.descrizione = driving.descrizione;
+    this.rented.tariffa = driving.tariffa;
+    this.rented.valutazionemedia = driving.valutazionemedia;
   }
 
 }

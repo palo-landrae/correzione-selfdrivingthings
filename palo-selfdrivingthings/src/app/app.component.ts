@@ -10,6 +10,8 @@ import { Driving } from './driving.model';
 export class AppComponent implements OnInit {
   oDriving: Observable<Driving[]>;
   listDriving: Driving[];
+  rented: Driving = new Driving('#','#','#',0);
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
