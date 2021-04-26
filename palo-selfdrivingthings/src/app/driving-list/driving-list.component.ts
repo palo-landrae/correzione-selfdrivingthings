@@ -10,8 +10,8 @@ import { Rent } from '../models/rent.model';
 export class DrivingListComponent implements OnInit {
   @Input() listDriving: Driving[];
   @Input() rented : Driving;
+  @Input() listRented : Rent[];
 
-  rentedVector : Rent[] = new Array<Rent>();
   constructor() { }
 
   ngOnInit(): void {
@@ -26,8 +26,8 @@ export class DrivingListComponent implements OnInit {
     let r = new Rent();
     r.numeroNoleggi = 1;
     r.driving = driving;
-    this.rentedVector.push(r);
-    console.log(this.rentedVector);
+    this.listRented.push(r);
+    console.log(this.listRented);
   }
 
 
